@@ -59,7 +59,6 @@ print(classification_report(testY.argmax(axis=1),
 
 print("[INFO] serializing network to '{}'...".format('D:/Liveness_Detection/MiniVGG'))
 model.save("liveness.model", save_format="h5")
-# save the label encoder to disk
 
 f = open('D:/Liveness_Detection/le.pickle', "wb")
 f.write(pickle.dumps(le))

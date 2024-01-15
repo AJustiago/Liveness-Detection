@@ -22,6 +22,12 @@ The MiniVGG architecture is defined as follows:
 
 2. **Use `collect_dataset` Script**: Utilize the provided script (`collect_dataset.py`) to organize the recorded videos into a structured dataset. This script will label the videos as real or fake and split them into training and testing sets.
 
+## Training Dataset
+**train.py**
+
+## Training Plot
+![plot](plot.png)
+
 ## Acknowledgments
 The MiniVGG architecture is inspired by the original VGGNet [1].
 
