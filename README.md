@@ -16,12 +16,6 @@ The MiniVGG architecture is defined as follows:
 - **Fully Connected Layer 1**: 128 neurons with ReLU activation and dropout.
 - **Fully Connected Layer 2**: Output layer with softmax activation.
 
-## Steps to Create Dataset
-
-1. **Add Real and Fake Videos**: Record real videos using your phone to represent genuine interactions. Record fake videos to simulate liveness attacks. Make sure to vary lighting conditions and angles for a robust dataset.
-
-2. **Use `collect_dataset` Script**: Utilize the provided script (`collect_dataset.py`) to organize the recorded videos into a structured dataset. This script will label the videos as real or fake and split them into training and testing sets.
-
 ## Installation
 
 To set up the required environment for training and testing the MiniVGG model, follow these steps:
@@ -34,8 +28,22 @@ To set up the required environment for training and testing the MiniVGG model, f
 2. **Install Dependencies:**
     ```bash
     pip install -r reuirements.txt
-    
-This command will install all the necessary Python packages specified in the [requirements](https://github.com/AJustiago/Liveness-Detection/blob/main/requirements.txt) file.
+    ```
+    This command will install all the necessary Python packages specified in the [requirements](https://github.com/AJustiago/Liveness-Detection/blob/main/requirements.txt) file.
+
+3. **Download Pre-trained Weights (Optional):
+    If you have pre-trained weights for the MiniVGG model, you can download and place them in the project directory.
+    ```bash
+    # Example command to download pre-trained weights
+    wget https://example.com/pretrained_weights.h5 -O pretrained_weights.h5
+    ```
+    Make sure to update the URL with the correct link to your pre-trained weights.
+
+## Steps to Create Dataset
+
+1. **Add Real and Fake Videos**: Record real videos using your phone to represent genuine interactions. Record fake videos to simulate liveness attacks. Make sure to vary lighting conditions and angles for a robust dataset.
+
+2. **Use `collect_dataset` Script**: Utilize the provided script (`collect_dataset.py`) to organize the recorded videos into a structured dataset. This script will label the videos as real or fake and split them into training and testing sets.
 
 ## Training Dataset
 [Train your Dataset Here](https://github.com/AJustiago/Liveness-Detection/blob/main/train.py)
