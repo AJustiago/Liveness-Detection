@@ -22,6 +22,21 @@ The MiniVGG architecture is defined as follows:
 
 2. **Use `collect_dataset` Script**: Utilize the provided script (`collect_dataset.py`) to organize the recorded videos into a structured dataset. This script will label the videos as real or fake and split them into training and testing sets.
 
+## Installation
+
+To set up the required environment for training and testing the MiniVGG model, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/AJustiago/Liveness-Detection.git
+   cd Liveness-Detection
+
+2. **Install Dependencies:**
+    ```bash
+    pip install -r reuirements.txt
+    
+This command will install all the necessary Python packages specified in the [requirements](https://github.com/AJustiago/Liveness-Detection/blob/main/requirements.txt) file.
+
 ## Training Dataset
 [Train your Dataset Here](https://github.com/AJustiago/Liveness-Detection/blob/main/train.py)
 
