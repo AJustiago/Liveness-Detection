@@ -27,7 +27,7 @@ To set up the required environment for training and testing the MiniVGG model, f
 
 2. **Install Dependencies:**
     ```bash
-    pip install -r reuirements.txt
+    pip install -r requirements.txt
     ```
     This command will install all the necessary Python packages specified in the [requirements](https://github.com/AJustiago/Liveness-Detection/blob/main/requirements.txt) file.
 
